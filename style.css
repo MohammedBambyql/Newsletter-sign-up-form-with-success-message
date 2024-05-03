@@ -1,0 +1,108 @@
+@font-face {
+  font-family:Robot-Bold ;
+  src: url(assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Robot;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+*{
+  font-family: Robot;
+}
+body{
+  background-color: rgb(95, 95, 95);
+}
+
+.container{
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+  /* display: none; */
+}
+.first-contant{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 60px 20px 0px 20px;
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+
+}
+.marg{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.right-img{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+h1{
+  font-size: 50px;
+  font-family: Robot-Bold;
+}
+ul li {
+  display: flex;
+  gap: 5px;
+}
+input{
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid ;
+  cursor: pointer;
+}
+
+input:focus:invalid{
+  border: 4px solid red;
+}
+button:active{
+  border: 1px solid;
+}
+button{
+  height: 40px;
+  font-family: Robot;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: hsl(234, 29%, 20%);
+  border: 0;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: hsl(4, 100%, 67%);;
+  box-shadow: 0px 0px 5px 0px hsl(4, 100%, 67%);
+}
+.button-popup{
+  width: 300px;
+  margin-top: 20px;
+}
+label{
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.popup{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: none;
+}
+
+.popup h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.popup p{
+  font-size: 12px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <title>Newsletter sign-up form with success message</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <div id="container" class="container">
+    <div class="first-contant">
+      <h1 class="marg">Stay Updated!</h1>
+      <p class="marg">Join 60,000+ product managers receiving monthly updates on: </p>
+      <ul>
+        <li><img src="assets/images/icon-list.svg" style="margin-bottom: 15px;">Product discovery and building what matters</li>
+        <li><img src="assets/images/icon-list.svg" style="margin-bottom: 10px;">Measuring to ensure updates are a success</li>
+        <li><img src="assets/images/icon-list.svg" style="margin-bottom: 10px;">And much more!</li>
+      </ul>
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email-input" placeholder=" email.compony.com" required  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+      <button id="first-container" type="submit">Subscribe to monthly newsletter</button>
+    </div>
+      <img class="right-img" src="assets/images/illustration-sign-up-desktop.svg" width="250px" height="450px" >
+  </div>
+
+  <div id="popup" class="popup">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h1 class="marg">Thanks for <br>subscription!</h1>
+    <p>a confirmation email has been sent to <strong>mohammed@gmail.com</strong> please open it and click the button inside to confirm your subscription</p>
+    <button id="btn-popup" class="button-popup">Dismiss message</button>
+  </div>
+  <script src="java.js"></script>
+  
+
+
+  <!-- Sign-up form end -->
+
+</body>
+</html>
